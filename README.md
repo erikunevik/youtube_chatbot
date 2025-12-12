@@ -6,16 +6,16 @@ The chatbot is streamed as an webbap from Azure using Streamlit.
 
 The system has three main components:
 
-##### 1. Frontend (Streamlit Web App)
+##### 1. Frontend 
 Provides a chat interface.  
 Built with Streamlit and containerized using Docker.  
 
-##### 2. API Layer (FastAPI in Azure Function)
+##### 2. FastAPI Layer 
 Hosts REST API endpoints for chat queries and history.  
 Runs FastAPI inside the Azure Function app.
 Handles HTTP requests from the frontend and forwards them to backend logic.  
 
-##### 3. Backend (RAG Agent and Data Handling)
+##### 3. Backend 
 This layer ingests data from my teacher’s YouTube channel into a LanceDB vector database, creating embedding representations of the documents with LanceModel.
 
 The stored data is then processed by the RAG Agent, which uses LanceDB to perform similarity searches based on embeddings to find the closest matching documents for a given query.
