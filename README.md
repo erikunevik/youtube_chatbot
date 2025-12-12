@@ -60,21 +60,21 @@ With Terraform:
 
 ## Guide for setup
 
-#### 1) Clone the repository
+#### 1 Clone the repository
 
-#### 2) Log into Azure 
+#### 2 Log into Azure 
 
 az login
 
 az account set --subscription "<SUBSCRIPTION_ID"
 
-#### 3) Create an Azure function of the repo
+#### 3 Create an Azure function of the repo
 
 My Teacher Kochun provides excellent instrutions for that process if you need help:
 
 https://github.com/AIgineerAB/AI_engineering_four_weeks_course/tree/main/11_deploy_rag_serverless
 
-#### 4) Setup for Function App 
+#### 4 Setup for Function App 
 
 After deployment:
 
@@ -98,7 +98,7 @@ uv pip install -r requirements.txt
 
 
 
-#### 5) Setting upp resorces for a App Service plan, ACR and Web App Service in Azure 
+#### 5 Setting upp resorces for a App Service plan, ACR and Web App Service in Azure 
 
 1) In resources.tf, change the resource name to the same that you used when you created the Function app.
 
@@ -131,7 +131,7 @@ terraform apply
 
 ![alt text](extra_files/image-3.png)
 
-#### 6) Pushing the app to ACR as an app image with docker
+#### 6 Pushing the app to ACR as an app image with docker
 
 Run the follwoing syntax from the root of the repo with prefered name*:
 
@@ -145,7 +145,7 @@ Run the follwoing syntax from the root of the repo with prefered name*:
 
 ![alt text](extra_files/image-10.png)
 
-#### 7) Connect the image to the created Azure webbapp
+#### 7 Connect the image to the created Azure webbapp
 
 By clicking the defaut choices in the boxes.
 
